@@ -58,8 +58,6 @@ class GraphBuilder:
         self.graph_builder.add_node("summarize_news", ai_news_node.summarize_news)
         self.graph_builder.add_node("save_result", ai_news_node.save_result)
 
-
-        ## Add Edges
         self.graph_builder.add_edge(START, "fetch_news")
         self.graph_builder.add_edge("fetch_news", "summarize_news")
         self.graph_builder.add_edge("summarize_news", "save_result")
