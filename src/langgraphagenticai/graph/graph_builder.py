@@ -37,8 +37,7 @@ class GraphBuilder:
         tool_node = ToolNode(tools)
         
         llm = self.llm 
-
-        ## Define the chatbot node
+        
         obj_chatbot_with_node = ChatbotWithToolNode(llm)
         chatbot_node = obj_chatbot_with_node.create_chatbot(tools=tools)
 
