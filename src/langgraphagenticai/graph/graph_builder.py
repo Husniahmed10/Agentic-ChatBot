@@ -35,8 +35,7 @@ class GraphBuilder:
 
         tools = get_tools()
         tool_node = ToolNode(tools)
-
-        ## define the llm 
+        
         llm = self.llm 
 
         ## Define the chatbot node
