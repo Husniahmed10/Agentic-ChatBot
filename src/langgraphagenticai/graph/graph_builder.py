@@ -52,8 +52,7 @@ class GraphBuilder:
     def ai_news_builder_graph(self):
 
         ai_news_node = AINewsNode(self.llm)
-   
-        ## Add nodes
+
         self.graph_builder.add_node("fetch_news", ai_news_node.fetch_news)
         self.graph_builder.add_node("summarize_news", ai_news_node.summarize_news)
         self.graph_builder.add_node("save_result", ai_news_node.save_result)
